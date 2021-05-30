@@ -200,7 +200,7 @@ As can be seen in the graph, tornado is clearly the most harmful weather event f
 agg.economic$EVENT <- as.factor(agg.economic$EVENT)
 
 # plot PROPERTY damage and CROP damage by EVENT
-economic.plot <- ggplot(agg.economic, aes(x = EVENT, y = Total, fill = type)) + geom_bar(stat = "identity") + scale_fill_manual(values=c("#ffc500", "#c21500")) +
+economic.plot <- ggplot(agg.economic, aes(x = EVENT, y = Total, fill = type)) + geom_bar(stat = "identity") + scale_fill_manual(values=c("pink", "#C8A2C8")) +
   coord_flip() +
   xlab("Type of event") + 
   ylab("Total damage occured (in dollars)") +

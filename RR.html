@@ -339,7 +339,7 @@ print(health.plot)  </code></pre>
 agg.economic$EVENT &lt;- as.factor(agg.economic$EVENT)
 
 # plot PROPERTY damage and CROP damage by EVENT
-economic.plot &lt;- ggplot(agg.economic, aes(x = EVENT, y = Total, fill = type)) + geom_bar(stat = &quot;identity&quot;) + scale_fill_manual(values=c(&quot;#ffc500&quot;, &quot;#c21500&quot;)) +
+economic.plot &lt;- ggplot(agg.economic, aes(x = EVENT, y = Total, fill = type)) + geom_bar(stat = &quot;identity&quot;) + scale_fill_manual(values=c(&quot;pink&quot;, &quot;#C8A2C8&quot;)) +
   coord_flip() +
   xlab(&quot;Type of event&quot;) + 
   ylab(&quot;Total damage occured (in dollars)&quot;) +
