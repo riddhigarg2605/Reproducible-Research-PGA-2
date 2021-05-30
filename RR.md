@@ -190,6 +190,7 @@ health.plot <- ggplot(agg.health, aes(x = EVENT, y = Total, fill = type)) + geom
   ggtitle("Public health impact of various weather events") +
   theme(plot.title = element_text(hjust = 0.5))
 print(health.plot)  
+[plot 1](https://raw.githubusercontent.com/riddhigarg2605/Reproducible-Research-PGA-2/main/Rplot1.png)
 ```
 
 As can be seen in the graph, tornado is clearly the most harmful weather event for health which includes parameters like total fatalities and injuries.
@@ -208,6 +209,7 @@ economic.plot <- ggplot(agg.economic, aes(x = EVENT, y = Total, fill = type)) + 
   theme(plot.title = element_text(hjust = 0.5))  
  
 print(economic.plot) 
+[plot 2](https://raw.githubusercontent.com/riddhigarg2605/Reproducible-Research-PGA-2/main/Rplot2.png)
 ```
 
 As can be seen in the graph, floods are clearly the most devastating weather event in terms of economic consequence which includes parameters like damage to crop and property.
